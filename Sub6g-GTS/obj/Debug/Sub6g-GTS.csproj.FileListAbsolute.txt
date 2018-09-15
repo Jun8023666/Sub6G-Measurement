@@ -1,0 +1,15 @@
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\Sub6g-GTS.csprojAssemblyReference.cache
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\MainWindow.g.cs
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\App.g.cs
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\Sub6g-GTS_MarkupCompile.cache
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\Sub6g-GTS_MarkupCompile.lref
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\bin\Debug\Sub6g-GTS.exe.config
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\bin\Debug\Sub6g-GTS.exe
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\bin\Debug\Sub6g-GTS.pdb
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\MainWindow.baml
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\Sub6g-GTS.g.resources
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\Sub6g_GTS.Properties.Resources.resources
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\Sub6g-GTS.csproj.GenerateResource.cache
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\Sub6g-GTS.csproj.CoreCompileInputs.cache
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\Sub6g-GTS.exe
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\Sub6g-GTS.pdb

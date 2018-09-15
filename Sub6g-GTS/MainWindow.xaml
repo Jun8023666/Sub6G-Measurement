@@ -1,0 +1,100 @@
+﻿<Window x:Class="Sub6g_GTS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sub6g_GTS"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="806.441" Width="872.409">
+    <Grid Margin="0,0,-11.5,0" HorizontalAlignment="Left" Width="879" Height="788" VerticalAlignment="Top">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="329" VerticalAlignment="Top" Width="499" Margin="368,15,0,0">
+            <Grid Margin="-1,15,0,0" Height="306" VerticalAlignment="Top" HorizontalAlignment="Left" Width="489">
+                <Label Content="Operating Band" HorizontalAlignment="Left" Margin="0,1,0,0" VerticalAlignment="Top"/>
+                <Label Content="Downlink" HorizontalAlignment="Left" Margin="198,38,0,0" VerticalAlignment="Top"/>
+                <Label Content="UPlink" HorizontalAlignment="Left" Margin="391,38,0,0" VerticalAlignment="Top"/>
+                <Label Content="Channel" HorizontalAlignment="Left" Margin="14,73,0,0" VerticalAlignment="Top"/>
+                <Label Content="Frequency" HorizontalAlignment="Left" Margin="14,100,0,0" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="134,76,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="334,76,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="134,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="334,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
+                <Label Content="Cell Bandwidth" HorizontalAlignment="Left" Margin="14,130,0,0" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="134,158,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+                <Label Content="RS EPRE" HorizontalAlignment="Left" Margin="14,154,0,0" VerticalAlignment="Top"/>
+                <Label Content="Full Cell BW Pow" HorizontalAlignment="Left" Margin="14,184,0,0" VerticalAlignment="Top"/>
+                <Label Content="PUSCH Open Loop Nom.Power" HorizontalAlignment="Left" Margin="14,214,0,0" VerticalAlignment="Top"/>
+                <Label Content="PUSCH Closed Loop Target Power" HorizontalAlignment="Left" Margin="14,244,0,0" VerticalAlignment="Top"/>
+                <TextBox HorizontalAlignment="Left" Height="24" Margin="334,216,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
+                <TextBox HorizontalAlignment="Left" Height="24" Margin="334,246,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
+                <ComboBox HorizontalAlignment="Left" Margin="134,5,0,0" VerticalAlignment="Top" Width="200" SelectedIndex="0">
+                    <ComboBoxItem Content="Band 1"/>
+                    <ComboBoxItem Content="Band 2"/>
+                    <ComboBoxItem Content="Band 3"/>
+                </ComboBox>
+                <ComboBox HorizontalAlignment="Left" Margin="334,5,0,0" VerticalAlignment="Top" Width="142" SelectedIndex="0">
+                    <ComboBoxItem Content="FDD"/>
+                </ComboBox>
+                <ComboBox HorizontalAlignment="Left" Margin="134,132,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.079,0.167" SelectedIndex="0">
+                    <ComboBoxItem Content="5.0 MHz"/>
+                    <ComboBoxItem Content="10.0 MHz"/>
+                </ComboBox>
+                <ComboBox HorizontalAlignment="Left" Margin="334,132,0,0" VerticalAlignment="Top" Width="142" SelectedIndex="0">
+                    <ComboBoxItem Content="5 MHz"/>
+                    <ComboBoxItem Content="10.0 MHz"/>
+                </ComboBox>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="134,188,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+                <Button Content="Config" HorizontalAlignment="Left" Margin="239,277,0,0" VerticalAlignment="Top" Width="76"/>
+
+            </Grid>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="329" Margin="0,449,0,0" VerticalAlignment="Top" Width="368">
+            <Grid Margin="-1,0,9,9" Height="309" VerticalAlignment="Bottom">
+                <TextBlock HorizontalAlignment="Left" Margin="34,32,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="130" Width="216" xml:space="preserve">
+                    This is line 1. 
+                    This is an indented line 2.
+                </TextBlock>
+            </Grid>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="263" Margin="0,186,0,0" VerticalAlignment="Top" Width="368">
+            <Grid Margin="1,-5,-1,0" Height="263" VerticalAlignment="Top">
+                <Label Content="IMSI" HorizontalAlignment="Left" Margin="46,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.358,3.87"/>
+                <Label Content="IMEI" HorizontalAlignment="Left" Margin="46,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.358,3.87"/>
+                <ComboBox Name="UEInfo_Cbox" HorizontalAlignment="Left" Margin="45,29,0,0" VerticalAlignment="Top" Width="229" SelectedIndex="0">
+                    <ComboBoxItem Content="UE Info"/>
+                </ComboBox>
+                <Label Content="UE's Usage 8" HorizontalAlignment="Left" Margin="46,158,0,0" VerticalAlignment="Top"/>
+                <Label Content="Default Bearer" HorizontalAlignment="Left" Margin="46,188,0,0" VerticalAlignment="Top"/>
+                <Label Content="Voice Domain" HorizontalAlignment="Left" Margin="46,128,0,0" VerticalAlignment="Top"/>
+                <Label Content="Dedicated Bearer" HorizontalAlignment="Left" Margin="46,218,0,0" VerticalAlignment="Top"/>
+                <Label Content="---" HorizontalAlignment="Left" Margin="207,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.358,3.87"/>
+                <Label Content="---" HorizontalAlignment="Left" Margin="207,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.358,3.87"/>
+                <Label Content="---" HorizontalAlignment="Left" Margin="207,158,0,0" VerticalAlignment="Top"/>
+                <Label Content="---" HorizontalAlignment="Left" Margin="207,188,0,0" VerticalAlignment="Top"/>
+                <Label Content="---" HorizontalAlignment="Left" Margin="207,128,0,0" VerticalAlignment="Top"/>
+                <Label Content="---" HorizontalAlignment="Left" Margin="207,218,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="105" Margin="368,344,0,0" VerticalAlignment="Top" Width="499">
+            <Grid Height="94" VerticalAlignment="Bottom">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+            </Grid>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="329" Margin="368,449,0,-59" VerticalAlignment="Top" Width="499">
+            <Grid Height="316" VerticalAlignment="Top" HorizontalAlignment="Right" Width="497" Margin="0,2,0,0"/>
+        </Border>
+        <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="0,15,0,0" VerticalAlignment="Top" Width="368">
+            <Grid>
+                <Label Content="Cell" HorizontalAlignment="Left" Margin="10,47,0,0" VerticalAlignment="Top"/>
+                <Label Content="RRC State" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top"/>
+                <Label Content="Connection Status" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+                <Label Content="Packet Switch" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top"/>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>
