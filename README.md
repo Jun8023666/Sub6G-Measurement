@@ -1,2 +1,2 @@
 # Sub6G-Measurement
-Measurement for Sub6G windows
+Measurement for Sub6G windows.
