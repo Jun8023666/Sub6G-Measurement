@@ -17,36 +17,36 @@
                 <Label Content="UPlink" HorizontalAlignment="Left" Margin="391,38,0,0" VerticalAlignment="Top"/>
                 <Label Content="Channel" HorizontalAlignment="Left" Margin="14,73,0,0" VerticalAlignment="Top"/>
                 <Label Content="Frequency" HorizontalAlignment="Left" Margin="14,100,0,0" VerticalAlignment="Top"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="134,76,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="334,76,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="134,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="334,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
+                <TextBox Name="ConfigDLCha_txt" HorizontalAlignment="Left" Height="23" Margin="134,76,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+                <TextBox Name="ConfigULCha_txt" HorizontalAlignment="Left" Height="23" Margin="334,76,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
+                <TextBox Name="ConfigDLFre_txt" HorizontalAlignment="Left" Height="23" Margin="134,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+                <TextBox Name="ConfigULFre_txt" HorizontalAlignment="Left" Height="23" Margin="334,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
                 <Label Content="Cell Bandwidth" HorizontalAlignment="Left" Margin="14,130,0,0" VerticalAlignment="Top"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="134,158,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+                <TextBox Name="ConfigDLRSEPRF_txt" HorizontalAlignment="Left" Height="23" Margin="134,158,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
                 <Label Content="RS EPRE" HorizontalAlignment="Left" Margin="14,154,0,0" VerticalAlignment="Top"/>
                 <Label Content="Full Cell BW Pow" HorizontalAlignment="Left" Margin="14,184,0,0" VerticalAlignment="Top"/>
                 <Label Content="PUSCH Open Loop Nom.Power" HorizontalAlignment="Left" Margin="14,214,0,0" VerticalAlignment="Top"/>
                 <Label Content="PUSCH Closed Loop Target Power" HorizontalAlignment="Left" Margin="14,244,0,0" VerticalAlignment="Top"/>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="334,216,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
-                <TextBox HorizontalAlignment="Left" Height="24" Margin="334,246,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
-                <ComboBox HorizontalAlignment="Left" Margin="134,5,0,0" VerticalAlignment="Top" Width="200" SelectedIndex="0">
+                <TextBox Name="ConfigULOLP_txt" HorizontalAlignment="Left" Height="24" Margin="334,216,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
+                <TextBox Name="ConfigULCLP_txt" HorizontalAlignment="Left" Height="24" Margin="334,246,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
+                <ComboBox Name="ConfigDLOB_Cbox" HorizontalAlignment="Left" Margin="134,5,0,0" VerticalAlignment="Top" Width="200" SelectedIndex="0">
                     <ComboBoxItem Content="Band 1"/>
                     <ComboBoxItem Content="Band 2"/>
                     <ComboBoxItem Content="Band 3"/>
                 </ComboBox>
-                <ComboBox HorizontalAlignment="Left" Margin="334,5,0,0" VerticalAlignment="Top" Width="142" SelectedIndex="0">
+                <ComboBox  Name="ConfigULOB_Cbox" HorizontalAlignment="Left" Margin="334,5,0,0" VerticalAlignment="Top" Width="142" SelectedIndex="0">
                     <ComboBoxItem Content="FDD"/>
                 </ComboBox>
-                <ComboBox HorizontalAlignment="Left" Margin="134,132,0,0" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.079,0.167" SelectedIndex="0">
+                <ComboBox Name="ConfigDLCBW_Cbox" HorizontalAlignment="Left" Margin="134,0,0,153" VerticalAlignment="Bottom" Width="200" RenderTransformOrigin="0.079,0.167" SelectedIndex="0">
                     <ComboBoxItem Content="5.0 MHz"/>
                     <ComboBoxItem Content="10.0 MHz"/>
                 </ComboBox>
-                <ComboBox HorizontalAlignment="Left" Margin="334,132,0,0" VerticalAlignment="Top" Width="142" SelectedIndex="0">
+                <ComboBox Name="ConfigULCBW_Cbox" HorizontalAlignment="Left" Margin="334,132,0,0" VerticalAlignment="Top" Width="142" SelectedIndex="0">
                     <ComboBoxItem Content="5 MHz"/>
                     <ComboBoxItem Content="10.0 MHz"/>
                 </ComboBox>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="134,188,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
-                <Button Content="Config" HorizontalAlignment="Left" Margin="239,277,0,0" VerticalAlignment="Top" Width="76"/>
+                <TextBox Name="ConfigDLFCBWP_txt" HorizontalAlignment="Left" Height="23" Margin="134,188,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+                <Button Content="Config" HorizontalAlignment="Left" Margin="239,277,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click"/>
 
             </Grid>
         </Border>
@@ -62,7 +62,7 @@
             <Grid Margin="1,-5,-1,0" Height="263" VerticalAlignment="Top">
                 <Label Content="IMSI" HorizontalAlignment="Left" Margin="46,98,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.358,3.87"/>
                 <Label Content="IMEI" HorizontalAlignment="Left" Margin="46,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.358,3.87"/>
-                <ComboBox Name="UEInfo_Cbox" HorizontalAlignment="Left" Margin="45,29,0,0" VerticalAlignment="Top" Width="229" SelectedIndex="0">
+                <ComboBox Name="UEInfo_Cbox" HorizontalAlignment="Left" Margin="45,29,0,0" VerticalAlignment="Top" Width="229">
                     <ComboBoxItem Content="UE Info"/>
                 </ComboBox>
                 <Label Content="UE's Usage 8" HorizontalAlignment="Left" Margin="46,158,0,0" VerticalAlignment="Top"/>

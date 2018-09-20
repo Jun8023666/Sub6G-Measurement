@@ -13,3 +13,5 @@ C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\Sub6g-GTS.csproj.Gener
 C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\Sub6g-GTS.csproj.CoreCompileInputs.cache
 C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\Sub6g-GTS.exe
 C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\Sub6g-GTS.pdb
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\ConfigWindow.g.cs
+C:\Users\18551\source\repos\Sub6g-GTS\Sub6g-GTS\obj\Debug\ConfigWindow.baml
