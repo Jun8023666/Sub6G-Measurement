@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>20180920060952526_easyicon_net_16.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -102,6 +105,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="20180920060952526_easyicon_net_16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="LightOff.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="LightOn.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Light_OFF.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Light_ON.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
