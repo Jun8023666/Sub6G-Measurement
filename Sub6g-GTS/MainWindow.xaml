@@ -5,30 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sub6g_GTS"
         mc:Ignorable="d"
-        Title="sub6G_GTS" Height="806.441" Width="872.409">
-    <Grid Margin="0,0,-11.5,0" HorizontalAlignment="Left" Width="879" Height="788" VerticalAlignment="Top">
+        Title="Sub6G_GTS" Height="806.441" Width="872.409" ResizeMode="CanMinimize">
+    <Grid Margin="0,0,-11.5,0" HorizontalAlignment="Left" Width="879" Height="788" VerticalAlignment="Top" >
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="329" VerticalAlignment="Top" Width="499" Margin="368,15,0,0">
             <Grid Margin="-1,15,0,0" Height="306" VerticalAlignment="Top" HorizontalAlignment="Left" Width="489">
                 <Label Content="Operating Band:" FontWeight="Black" HorizontalAlignment="Left" Margin="0,1,0,0" VerticalAlignment="Top"/>
-                <Label Content="Downlink" FontWeight="Black" HorizontalAlignment="Left" Margin="198,38,0,0" VerticalAlignment="Top"/>
-                <Label Content="UPlink" FontWeight="Black" HorizontalAlignment="Left" Margin="391,38,0,0" VerticalAlignment="Top"/>
+                <Label Content="Downlink" FontWeight="Black" HorizontalAlignment="Left" Margin="198,44,0,0" VerticalAlignment="Top"/>
+                <Label Content="UPlink" FontWeight="Black" HorizontalAlignment="Left" Margin="391,43,0,0" VerticalAlignment="Top"/>
                 <Label Content="Channel" FontWeight="Black" HorizontalAlignment="Left" Margin="14,73,0,0" VerticalAlignment="Top"/>
                 <Label Content="Frequency" FontWeight="Black" HorizontalAlignment="Left" Margin="14,100,0,0" VerticalAlignment="Top"/>
-                <TextBox Name="ConfigDLCha_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="134,76,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
-                <TextBox Name="ConfigULCha_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="334,76,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
-                <TextBox Name="ConfigDLFre_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="134,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
-                <TextBox Name="ConfigULFre_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="334,104,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
+                <TextBox Name="ConfigDLCha_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="134,76,0,0" TextWrapping="Wrap" Text="Channel 1" VerticalAlignment="Top" Width="200"/>
+                <TextBox Name="ConfigULCha_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="334,76,0,0" TextWrapping="Wrap" Text="Channel 1" VerticalAlignment="Top" Width="142"/>
+                <TextBox Name="ConfigDLFre_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="134,104,0,0" TextWrapping="Wrap" Text="850 MHz" VerticalAlignment="Top" Width="200"/>
+                <TextBox Name="ConfigULFre_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="334,104,0,0" TextWrapping="Wrap" Text="860 MHz" VerticalAlignment="Top" Width="142"/>
                 <Label Content="Cell Bandwidth" FontWeight="Black" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="14,130,0,0" VerticalAlignment="Top"/>
-                <TextBox Name="ConfigDLRSEPRF_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="134,158,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
+                <TextBox Name="ConfigDLRSEPRF_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="134,158,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="200"/>
                 <Label Content="RS EPRE" FontWeight="Black" HorizontalAlignment="Left" Margin="14,154,0,0" VerticalAlignment="Top"/>
                 <Label Content="Full Cell BW Pow" FontWeight="Black" HorizontalAlignment="Left" Margin="14,184,0,0" VerticalAlignment="Top"/>
                 <Label Content="PUSCH Open Loop Nom.Power" FontWeight="Black" HorizontalAlignment="Left" Margin="14,214,0,0" VerticalAlignment="Top"/>
                 <Label Content="PUSCH Closed Loop Target Power" FontWeight="Black" HorizontalAlignment="Left" Margin="14,244,0,0" VerticalAlignment="Top"/>
-                <TextBox Name="ConfigULOLP_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="24" Margin="334,216,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
-                <TextBox Name="ConfigULCLP_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="24" Margin="334,246,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="142"/>
+                <TextBox Name="ConfigULOLP_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="24" Margin="334,216,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="142"/>
+                <TextBox Name="ConfigULCLP_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="24" Margin="334,246,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="142"/>
                 <ComboBox Name="ConfigDLOB_Cbox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="134,5,0,0" VerticalAlignment="Top" Width="200" SelectedIndex="0">
                     <ComboBoxItem Content="Band 1"/>
                     <ComboBoxItem Content="Band 2"/>
@@ -36,6 +36,7 @@
                 </ComboBox>
                 <ComboBox  Name="ConfigULOB_Cbox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="334,5,0,0" VerticalAlignment="Top" Width="142" SelectedIndex="0">
                     <ComboBoxItem Content="FDD"/>
+                    <ComboBoxItem Content="TDD"/>
                 </ComboBox>
                 <ComboBox Name="ConfigDLCBW_Cbox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="134,0,0,153" VerticalAlignment="Bottom" Width="200" RenderTransformOrigin="0.079,0.167" SelectedIndex="0">
                     <ComboBoxItem Content="5.0 MHz"/>
@@ -45,14 +46,15 @@
                     <ComboBoxItem Content="5 MHz"/>
                     <ComboBoxItem Content="10.0 MHz"/>
                 </ComboBox>
-                <TextBox Name="ConfigDLFCBWP_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="134,188,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="200"/>
-                <Button Content="Config" HorizontalAlignment="Left" Margin="239,277,0,0" VerticalAlignment="Top" Width="76" Click="Button_Click"/>
+                <TextBox Name="ConfigDLFCBWP_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="134,188,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="200"/>
+                <Button Content="Interface Config" HorizontalAlignment="Left" Margin="337,277,0,0" VerticalAlignment="Top" Width="139" Click="Button_Click"/>
+                <TextBox HorizontalAlignment="Left" Height="23" Margin="217,210,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
             </Grid>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="329" Margin="0,449,0,0" VerticalAlignment="Top" Width="368">
-            <Grid Margin="-1,0,9,9" Height="309" VerticalAlignment="Bottom">
-                <TextBlock HorizontalAlignment="Left" Margin="34,32,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="130" Width="216" xml:space="preserve">
+            <Grid Margin="9,0,9,9" Height="309" VerticalAlignment="Bottom">
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="309" Width="348" xml:space="preserve">
                     This is line 1. 
                     This is an indented line 2.
                 </TextBlock>
@@ -78,14 +80,27 @@
             </Grid>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="105" Margin="368,344,0,0" VerticalAlignment="Top" Width="499">
-            <Grid Height="94" VerticalAlignment="Bottom">
+            <Grid Margin="-1,-1,1,-1">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
+                <Button Content="Start" FontSize="16" HorizontalAlignment="Left" Margin="381,5,0,0" VerticalAlignment="Top" Width="106" Height="38"/>
+                <Label Content="WaveFile:" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                <Button Content="Stop" FontSize="16" HorizontalAlignment="Left" Margin="381,46,0,0" VerticalAlignment="Top" Width="106" Height="38"/>
+                <ProgressBar Name="ProBar" HorizontalAlignment="Left" Height="14" Margin="10,87,0,0" VerticalAlignment="Top" Width="477" Value="50" />
+                <ComboBox  Name="WaveFile_Dir" HorizontalAlignment="Left" Margin="78,5,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" >
+                    <ComboBoxItem Content="Local PC"/>
+                    <ComboBoxItem Content="Instrument USB"/>
+                </ComboBox>
+                <TextBox Name="Dir_text" HorizontalAlignment="Left" Height="23" Margin="10,34,0,0" TextWrapping="Wrap" Text="C:" VerticalAlignment="Top" Width="221"/>
+                <Button Name="DirOpen" Content="Open" HorizontalAlignment="Left" Margin="236,34,0,0" VerticalAlignment="Top" Width="57" Height="22" />
+                <Button Name="DirSend" Content="Send" HorizontalAlignment="Left" Margin="298,34,0,0" VerticalAlignment="Top" Width="51" Height="22"/>
+                <ComboBox Name="Dir_Com" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Width="221"/>
+                <Button Name="DirRefresh" Content="Refresh" HorizontalAlignment="Left" Margin="236,35,0,0" VerticalAlignment="Top" Width="62" Height="22" />
             </Grid>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="329" Margin="368,449,0,-59" VerticalAlignment="Top" Width="499">
-            <Grid Height="316" VerticalAlignment="Top" HorizontalAlignment="Right" Width="497" Margin="0,2,0,0"/>
+            <Grid Height="316" VerticalAlignment="Top" HorizontalAlignment="Right" Width="497" Margin="0,2,0,0" />
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="171" Margin="0,15,0,0" VerticalAlignment="Top" Width="368">
             <Grid>

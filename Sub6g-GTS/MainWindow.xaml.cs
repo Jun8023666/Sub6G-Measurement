@@ -40,13 +40,8 @@ namespace Sub6g_GTS
             ConfigULOLP_txt.Text = INI.ReadIni("section1", "key12");
             ConfigULCLP_txt.Text = INI.ReadIni("section1", "key13");
 
-
-
-
-
-
-
-
+            BindingShow();
+            WaveFile_Dir.SelectionChanged += WaveFile_Dir_SelectionChanged;
         }
         //在串口关闭时将控件输入信息保存
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -74,12 +69,37 @@ namespace Sub6g_GTS
             ConfigWindow configWindow = new ConfigWindow();
             bool?b = configWindow.ShowDialog();
             if (b == true)
-            { MessageBox.Show("确定了！"); }
+            { MessageBox.Show("Configuration Success...！"); }
             else if (b == false)
-            { MessageBox.Show("取消了！"); }
+            { MessageBox.Show("Configuration Cancered...！"); }
 
+        }
 
+        private void WaveFile_Dir_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            BindingShow();
+        }
 
+        //BindingShow()
+        //Used for change between Local file and Instrument Files
+        private void BindingShow()
+        {
+            if (WaveFile_Dir.SelectedIndex == 0)
+            {
+                DirOpen.Visibility = Visibility.Visible;
+                DirSend.Visibility = Visibility.Visible;
+                Dir_text.Visibility = Visibility.Visible;
+                Dir_Com.Visibility = Visibility.Hidden;
+                DirRefresh.Visibility = Visibility.Hidden;
+            }
+            else
+            {
+                DirOpen.Visibility = Visibility.Hidden;
+                DirSend.Visibility = Visibility.Hidden;
+                Dir_text.Visibility = Visibility.Hidden;
+                Dir_Com.Visibility = Visibility.Visible;
+                DirRefresh.Visibility = Visibility.Visible;
+            }
         }
     }
 
