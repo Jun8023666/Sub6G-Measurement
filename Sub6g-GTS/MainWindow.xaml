@@ -48,7 +48,6 @@
                 </ComboBox>
                 <TextBox Name="ConfigDLFCBWP_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="134,188,0,0" TextWrapping="Wrap" Text=" " VerticalAlignment="Top" Width="200"/>
                 <Button Content="Interface Config" HorizontalAlignment="Left" Margin="337,277,0,0" VerticalAlignment="Top" Width="139" Click="Button_Click"/>
-                <TextBox HorizontalAlignment="Left" Height="23" Margin="217,210,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
 
             </Grid>
         </Border>
