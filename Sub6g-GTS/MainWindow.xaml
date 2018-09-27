@@ -83,19 +83,20 @@
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
-                <Button Content="Start" FontSize="16" HorizontalAlignment="Left" Margin="381,5,0,0" VerticalAlignment="Top" Width="106" Height="38"/>
+                <Button Name="Dir_Start" Content="Start" FontSize="16" HorizontalAlignment="Left" Margin="381,5,0,0" VerticalAlignment="Top" Width="106" Height="38" Click="Button_Click_1"/>
                 <Label Content="WaveFile:" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                <Button Content="Stop" FontSize="16" HorizontalAlignment="Left" Margin="381,46,0,0" VerticalAlignment="Top" Width="106" Height="38"/>
+                <Button Name="Dir_Stop" Content="Stop" FontSize="16" HorizontalAlignment="Left" Margin="381,46,0,0" VerticalAlignment="Top" Width="106" Height="38"/>
                 <ProgressBar Name="ProBar" HorizontalAlignment="Left" Height="14" Margin="10,87,0,0" VerticalAlignment="Top" Width="477" Value="50" />
                 <ComboBox  Name="WaveFile_Dir" HorizontalAlignment="Left" Margin="78,5,0,0" VerticalAlignment="Top" Width="120" SelectedIndex="0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" >
                     <ComboBoxItem Content="Local PC"/>
                     <ComboBoxItem Content="Instrument USB"/>
                 </ComboBox>
                 <TextBox Name="Dir_text" HorizontalAlignment="Left" Height="23" Margin="10,34,0,0" TextWrapping="Wrap" Text="C:" VerticalAlignment="Top" Width="221"/>
-                <Button Name="DirOpen" Content="Open" HorizontalAlignment="Left" Margin="236,34,0,0" VerticalAlignment="Top" Width="57" Height="22" />
+                <Button Name="DirOpen" Content="Open" HorizontalAlignment="Left" Margin="236,34,0,0" VerticalAlignment="Top" Width="57" Height="22" Click="DirOpen_Click" />
                 <Button Name="DirSend" Content="Send" HorizontalAlignment="Left" Margin="298,34,0,0" VerticalAlignment="Top" Width="51" Height="22"/>
-                <ComboBox Name="Dir_Com" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Width="221"/>
-                <Button Name="DirRefresh" Content="Refresh" HorizontalAlignment="Left" Margin="236,35,0,0" VerticalAlignment="Top" Width="62" Height="22" />
+                <ComboBox Name="Dir_Com" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Width="221"/>
+                <Button Name="DirRefresh" Content="Refresh" HorizontalAlignment="Left" Margin="236,34,0,0" VerticalAlignment="Top" Width="62" Height="22" />
+                <Button Name="Dir_Pause" Content="Pause" FontSize="16" HorizontalAlignment="Left" Margin="381,5,0,0" VerticalAlignment="Top" Width="106" Height="38" Click="Dir_Pause_Click"/>
             </Grid>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Left" Height="329" Margin="368,449,0,-59" VerticalAlignment="Top" Width="499">
@@ -107,8 +108,8 @@
                 <Label Content="RRC State" FontWeight="Black" HorizontalAlignment="Left" Margin="10,118,0,0" VerticalAlignment="Top"/>
                 <Label Content="Connection Status" FontWeight="Black" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
                 <Label Content="Packet Switch" FontWeight="Black" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top"/>
-                <Image HorizontalAlignment="Left" Height="32" Margin="162,10,0,0" VerticalAlignment="Top" Width="36" Source="Light_OFF.ico"/>
-                <Image HorizontalAlignment="Left" Height="32" Margin="162,10,0,0" VerticalAlignment="Top" Width="32" Source="Light_ON.ico"/>
+                <Image Name="LightOff_ima" HorizontalAlignment="Left" Height="32" Margin="162,10,0,0" VerticalAlignment="Top" Width="36" Source="Light_OFF.ico"/>
+                <Image Name="LightOn_ima"  HorizontalAlignment="Left" Height="32" Margin="162,10,0,0" VerticalAlignment="Top" Width="32" Source="Light_ON.ico"/>
             </Grid>
         </Border>
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -42,6 +43,10 @@ namespace Sub6g_GTS
 
             BindingShow();
             WaveFile_Dir.SelectionChanged += WaveFile_Dir_SelectionChanged;
+
+            Dir_Pause.Visibility = Visibility.Hidden;
+            LightOn_ima.Visibility = Visibility.Hidden;
+            LightOff_ima.Visibility = Visibility.Hidden;
         }
         //在串口关闭时将控件输入信息保存
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
@@ -100,6 +105,32 @@ namespace Sub6g_GTS
                 Dir_Com.Visibility = Visibility.Visible;
                 DirRefresh.Visibility = Visibility.Visible;
             }
+        }
+        //open file按键按下，text接收路径
+        private void DirOpen_Click(object sender, RoutedEventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.ShowDialog();
+            string path = ofd.FileName;
+            Dir_text.Text = path;
+
+
+        }
+        //start 按键按下，Pause显示
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Dir_Pause.Visibility = Visibility.Visible;
+            Dir_Start.Visibility = Visibility.Hidden;
+            LightOn_ima.Visibility = Visibility.Visible;
+            LightOff_ima.Visibility = Visibility.Hidden;
+        }
+
+        private void Dir_Pause_Click(object sender, RoutedEventArgs e)
+        {
+            Dir_Pause.Visibility = Visibility.Hidden;
+            Dir_Start.Visibility = Visibility.Visible;
+            LightOn_ima.Visibility = Visibility.Hidden;
+            LightOff_ima.Visibility = Visibility.Visible;
         }
     }
 

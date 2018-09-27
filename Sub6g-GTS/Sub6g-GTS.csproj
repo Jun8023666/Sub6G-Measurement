@@ -110,12 +110,6 @@
     <Resource Include="20180920060952526_easyicon_net_16.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="LightOff.ico" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="LightOn.ico" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Light_OFF.ico" />
   </ItemGroup>
   <ItemGroup>
