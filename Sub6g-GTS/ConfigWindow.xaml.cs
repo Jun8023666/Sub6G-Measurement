@@ -44,7 +44,6 @@ namespace Sub6g_GTS
             }
 
         }
-
         private void Config_OK_Click(object sender, RoutedEventArgs e)
         {
             DialogResult = true;
