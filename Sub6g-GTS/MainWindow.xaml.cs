@@ -68,7 +68,7 @@ namespace Sub6g_GTS
             INI.WriteIni("section1", "key13", ConfigULCLP_txt.Text);
 
         }
-
+        //Interface Config按键
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ConfigWindow configWindow = new ConfigWindow();

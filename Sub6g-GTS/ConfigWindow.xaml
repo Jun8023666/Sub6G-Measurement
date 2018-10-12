@@ -24,7 +24,17 @@
                 <Grid Background="#FFE5E5E5"/>
             </TabItem>
             <TabItem Header="NET">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <TextBox Name="NETRemoteIP_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="24" Margin="88,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="168"/>
+                    <ComboBox Name="NETLocalIP_Cbox" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="88,29,0,0" VerticalAlignment="Top" Width="168"/>
+                    <Button Content="Connect" HorizontalAlignment="Left" Margin="88,187,0,0" VerticalAlignment="Top" Width="78" Height="23" Click="Button_Click"/>
+                    <Label Content="Local IP:" FontWeight="Black" HorizontalAlignment="Left" Margin="18,25,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Remote IP:" FontWeight="Black" HorizontalAlignment="Left" Margin="10,112,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Local Port:" FontWeight="Black" HorizontalAlignment="Left" Margin="279,29,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Remote Port:" FontWeight="Black" HorizontalAlignment="Left" Margin="279,112,0,0" VerticalAlignment="Top"/>
+                    <TextBox Name="NETLocalPort_txt" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Height="23" Margin="379,31,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+                    <TextBox Name="NETRemotePort_txt" VerticalContentAlignment="Center"   HorizontalContentAlignment="Center"  HorizontalAlignment="Left" Height="24" Margin="379,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="75"/>
+                </Grid>
             </TabItem>
         </TabControl>
 
