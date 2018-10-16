@@ -21,7 +21,15 @@
                 </Grid>
             </TabItem>
             <TabItem Header="WIFI">
-                <Grid Background="#FFE5E5E5"/>
+                <Grid Background="#FFE5E5E5">
+                    <TextBox Name="WIFISSID_txt" HorizontalAlignment="Left" VerticalContentAlignment="Center"   HorizontalContentAlignment="Center" Height="22" Margin="138,178,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175"/>
+                    <Label Content="SSID:" FontWeight="Black" HorizontalAlignment="Left" Margin="58,43,0,0" VerticalAlignment="Top"/>
+                    <Label Content="KEY:" FontWeight="Black" HorizontalAlignment="Left" Margin="58,107,0,0" VerticalAlignment="Top"/>
+                    <Button Name="WIFIAdd" Content="Add" HorizontalAlignment="Left" Margin="46,174,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="WIFIAdd_Click"/>
+                    <TextBox Name="WIFIKey_txt" HorizontalAlignment="Left" VerticalContentAlignment="Center"   HorizontalContentAlignment="Center" Height="22" Margin="137,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="175" SpellCheck.IsEnabled="True"/>
+                    <ComboBox Name="WIFISSID_Cbox" HorizontalAlignment="Left" VerticalContentAlignment="Center"   HorizontalContentAlignment="Center" Margin="138,47,0,0" VerticalAlignment="Top" Width="175"/>
+                    <Button x:Name="WIFIDelete" Content="Delete" HorizontalAlignment="Left" Margin="349,43,0,0" VerticalAlignment="Top" Width="75" Height="30" Click="WIFIDelete_Click"/>
+                </Grid>
             </TabItem>
             <TabItem Header="NET">
                 <Grid Background="#FFE5E5E5">

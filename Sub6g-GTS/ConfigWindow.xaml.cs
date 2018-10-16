@@ -32,7 +32,17 @@ namespace Sub6g_GTS
             NETLocalPort_txt.Text = INI.ReadIni("section2", "key14");
             NETRemotePort_txt.Text = INI.ReadIni("section2", "key15");
             NETRemoteIP_txt.Text = INI.ReadIni("section2", "key16");
-           
+            
+            WIFIKey_txt.Text = INI.ReadIni("section3", "key18");
+            WIFISSID_Cbox.Text = INI.ReadIni("section3", "key19");
+            string i = INI.ReadIni("section4", "i");
+            for (int j = 0; j < int.Parse(i); j++)
+            {
+                WIFISSID_Cbox.Items.Add(INI.ReadIni("section4", j.ToString()));
+            }
+
+
+
             ////给NET_Cbox添加IP地址
             foreach (IPAddress _IPAddress in Dns.GetHostEntry(Dns.GetHostName()).AddressList)
             {
@@ -40,6 +50,7 @@ namespace Sub6g_GTS
                 {
                     string AddressIP = _IPAddress.ToString();
                     NETLocalIP_Cbox.Items.Add(AddressIP);
+                    
                 }
             }
 
@@ -51,6 +62,17 @@ namespace Sub6g_GTS
            INI.WriteIni("section2", "key14", NETLocalPort_txt.Text);
            INI.WriteIni("section2", "key15", NETRemotePort_txt.Text);
            INI.WriteIni("section2", "key16", NETRemoteIP_txt.Text);          
+           INI.WriteIni("section3", "key18", WIFIKey_txt.Text);
+           
+            try
+            {
+                for (int i = 0; i <= WIFISSID_Cbox.Items.Count; i++)
+                {
+                    INI.WriteIni("section4", i.ToString(), WIFISSID_Cbox.Items[i].ToString());
+                }
+                
+            }
+            catch { INI.WriteIni("section4", "i", WIFISSID_Cbox.Items.Count.ToString()); }
 
         }
 
@@ -92,15 +114,30 @@ namespace Sub6g_GTS
                 flag = 1;
             }
             if (flag==0)
-            { MessageBox.Show("Receive Success...！"); }
+            { MessageBox.Show("Connect Success...！"); }
             else
             { 
-                MessageBox.Show("Receive Fail...！");
+                MessageBox.Show("Connect Fail...！");
             }
              newsock.Close();
             }
-       
-        
 
+        private void WIFIAdd_Click(object sender, RoutedEventArgs e)
+        {
+            string WIFISSID = WIFISSID_txt.Text;
+            WIFISSID_Cbox.Items.Add(WIFISSID);
+        }
+
+        private void WIFIDelete_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                WIFISSID_Cbox.Items.RemoveAt(WIFISSID_Cbox.SelectedIndex);
+            }
+            catch
+            {
+                MessageBox.Show("Delete error！");
+            }
+        }
     }
 }
