@@ -15,8 +15,9 @@
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
-                    <TextBox HorizontalAlignment="Left" Height="24" Margin="90,26,0,0" TextWrapping="Wrap" Text="Port 1" VerticalAlignment="Top" Width="120"/>
-                    <Label Content="USB Port" HorizontalAlignment="Left" Margin="25,24,0,0" VerticalAlignment="Top"/>
+                    <Label FontWeight="Black" Content="USB Port:" HorizontalAlignment="Left" Margin="25,24,0,0" VerticalAlignment="Top"/>
+                    <ComboBox Name="USBPort_Cbox" VerticalContentAlignment="Center" HorizontalAlignment="Left" Margin="124,28,0,0" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.542,1.071"/>
+                    <Button Name="USBConnect_btn" Content="Connect"  HorizontalAlignment="Left" Margin="124,128,0,0" VerticalAlignment="Top" Width="75" Height="28" Click="USBConnect_btn_Click"/>
 
                 </Grid>
             </TabItem>

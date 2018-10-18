@@ -14,6 +14,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.IO.Ports;
 
 
 
@@ -35,12 +36,17 @@ namespace Sub6g_GTS
             
             WIFIKey_txt.Text = INI.ReadIni("section3", "key18");
             WIFISSID_Cbox.Text = INI.ReadIni("section3", "key19");
+            //记住WIFI板块之前添加的SSID
             string i = INI.ReadIni("section4", "i");
             for (int j = 0; j < int.Parse(i); j++)
             {
                 WIFISSID_Cbox.Items.Add(INI.ReadIni("section4", j.ToString()));
             }
-
+            ///给USB_Cbox添加串口
+            foreach (string s in System.IO.Ports.SerialPort.GetPortNames())
+            {//获取有多少个COM口  
+                USBPort_Cbox.Items.Add(s);
+            }
 
 
             ////给NET_Cbox添加IP地址
@@ -114,7 +120,9 @@ namespace Sub6g_GTS
                 flag = 1;
             }
             if (flag==0)
-            { MessageBox.Show("Connect Success...！"); }
+            {
+                MessageBox.Show("Connect Success...！");
+            }
             else
             { 
                 MessageBox.Show("Connect Fail...！");
@@ -139,5 +147,58 @@ namespace Sub6g_GTS
                 MessageBox.Show("Delete error！");
             }
         }
+
+        private void USBConnect_btn_Click(object sender, RoutedEventArgs e)
+        {
+            SerialPort sp1 = new SerialPort();
+            try
+            {
+                //设置串口号  
+                string serialName = USBPort_Cbox.SelectedItem.ToString();
+                sp1.PortName = serialName;
+            }
+            catch
+            {
+                MessageBox.Show("未检测到串口!");
+            }
+            sp1.BaudRate = 115200;
+            sp1.DataBits = 8;
+            sp1.StopBits = StopBits.One;
+            sp1.Parity = Parity.None;
+            try
+            {
+                sp1.Open();     //打开串口  
+            }
+            catch
+            {
+                MessageBox.Show("串口打开失败");
+            }
+            if (sp1.IsOpen)
+            { 
+            sp1.WriteLine("1111");
+            sp1.ReadTimeout = 100;    //写入数据  
+            int Flag = 0;
+            try
+            {
+                string Rcv = sp1.ReadLine();                
+            }
+            catch
+            {
+                Flag = 1;
+            }
+            if (Flag == 0)
+            {
+                MessageBox.Show("Connect Success...！");
+                
+            }
+            else
+            {
+                MessageBox.Show("Connect Failed...！");
+            }
+            sp1.Close();
+            }
+        }
+
+
     }
 }
